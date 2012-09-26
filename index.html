@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Framework: TipSS</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link type="text/css" rel="stylesheet" href="css/tipss.css" />
+		<link type="text/css" rel="stylesheet" href="css/custom.css" />
+	</head>
+	<body>
+		<header>
+			<div class="wrapper">
+				<h1 class="logo">TipSS: Framework para CSS</h1>
+			</div>
+		</header>
+		<div class="wrapper home">
+			<div class="clearfix">
+			<div class="left leftcol">
+				<nav class="mt15">
+					<ul class="curva">
+						<li><a href="#estructura">Estructura</a></li>
+						<li><a href="#margenes">Márgenes</a></li>
+						<li><a href="#alineacion">Alineación</a></li>
+						<li><a href="#esquinas">Esquinas redondeadas</a></li>
+						<li><a href="#iconos">Iconos</a></li>
+						<li><a href="#formularios">Download</a></li>
+					</ul>
+				</nav>
+			</div><!-- fin leftcol -->
+			<div class="right maincol">
+				
+<!--				<div class="seccion mb10">Este es un texto simple reseteado</div>
+				<div class="seccion mb10">
+					<a href="#">Ejemplo de enlace</a>
+				</div>-->
+				<section id="estructura" class="mt15">
+					<h2>Estructura</h2>
+					<p>Usa <span class="tag">.clearfix</span>, <span class="tag">.left</span> y <span class="tag">.right</span> para crear dos columnas.</p>
+					<div class="clearfix" id="ejemplo3">
+						<div class="left col leftcol tac">Izquierda (200px)</div>
+						<div class="right col rightcol tac">Derecha (530px)</div>
+					</div>
+					<h3>Código fuente:</h3>
+				<pre><code>&lt;div class=&quot;clearfix&quot;&gt;
+	&lt;div class=&quot;left&quot;&gt;...&lt;/div&gt;
+	&lt;div class=&quot;right&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					<p>Usa <span class="tag">.clearfix</span> y <span class="tag">.left</span> para crear tres o más columnas.</p>
+					<div class="clearfix" id="ejemplo4">
+						<div class="left col leftcol tac">Izquierda (145px)</div>
+						<div class="left col ml15 maincol tac">Principal (425px)</div>
+						<div class="left col ml15 rightcol tac">Derecha (145px)</div>
+					</div>
+					<h3>Código fuente:</h3>
+				<pre><code>&lt;div class=&quot;clearfix&quot;&gt;
+	&lt;div class=&quot;left&quot;&gt;...&lt;/div&gt;
+	&lt;div class=&quot;left&quot;&gt;...&lt;/div&gt;
+	&lt;div class=&quot;left&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					
+					
+					
+				</section><!-- fin #estructura -->
+				
+				<section id="margenes">
+					<h2>Márgenes</h2>
+					<p>Usa <span class="tag">.mt*</span> para crear márgenes superiores, donde (*) puede ser 5, 10, 15 ó 20.</p>
+					<div class="mt10 bar tac">1</div>
+					<div class="mt10 bar tac">2</div>
+					<div class="mt10 bar tac">3</div>
+					<div class="mt10 bar tac">4</div>
+					<h3>Código fuente:</h3>
+				<pre><code>&lt;div class=&quot;mt10&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;mt10&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;mt10&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;mt10&quot;&gt;...&lt;/div&gt;</code></pre>
+					<p>Usa <span class="tag">.ml*</span> para crear márgenes izquierdos, donde (*) puede ser 5, 10, 15 ó 20.</p>
+					<div class="clearfix" id="ejemplo6">
+					<div class="left bar tac">1</div>
+					<div class="ml10 left bar tac">2</div>
+					<div class="ml10 left bar tac">3</div>
+					<div class="ml10 left bar tac">4</div>
+					<div class="ml10 left bar tac">5</div>
+					</div>
+					<h3>Código fuente:</h3>
+				<pre><code>&lt;div class=&quot;clearfix&quot;&gt;
+	&lt;div class=&quot;left ml10&quot;&gt;...&lt;/div&gt;
+	&lt;div class=&quot;left ml10&quot;&gt;...&lt;/div&gt;
+	&lt;div class=&quot;left ml10&quot;&gt;...&lt;/div&gt;
+	&lt;div class=&quot;left ml10&quot;&gt;...&lt;/div&gt;
+	&lt;div class=&quot;left ml10&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					<blockquote>
+					<p>También puedes usar <span class="tag">.mb*</span> para crear márgenes inferiores y <span class="tag">.mr*</span> para crear márgenes derechos, donde (*) puede ser 5, 10, 15 ó 20.</p>
+					</blockquote>
+				</section><!-- fin #margenes -->
+				
+				<section id="alineacion">
+					<h2>Alineación</h2>
+					<p>Usa <span class="tag">.tac</span> para centrar elementos <em>inline</em> y/o <span class="tag">.tar</span> para alinearlos a la derecha.</p>
+					<div class="bar tac mt10">Texto alineado al centro</div>
+					<div class="bar tar mt10">Texto alineado a la derecha</div>
+					<h3>Código fuente:</h3>
+					<pre><code>&lt;div class=&quot;tac&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;tar&quot;&gt;...&lt;/div&gt;</code></pre>
+				</section><!-- fin #alineacion -->
+				
+				<section id="esquinas">
+					<h2>Esquinas redondeadas</h2>
+					<p>Usa <span class="tag">.round*</span> para redondear esquinas donde (*) puede ser 2, 4, 8 ó 16.</p>
+					<div class="clearfix" id="ejemplo8">
+					<div class="left tac round2 col">2</div>
+					<div class="left tac ml10 round4 col">4</div>
+					<div class="left tac ml10 round8 col">8</div>
+					<div class="left tac ml10 round16 col">16</div>
+					</div>
+					
+					<h3>Código fuente:</h3>
+<pre><code>&lt;div class=&quot;clearfix&quot;&gt;
+	&lt;div class=&quot;left round2&quot;&gt;...&lt;/div&gt;
+	&lt;div class=&quot;left round4&quot;&gt;...&lt;/div&gt;
+	&lt;div class=&quot;left round8&quot;&gt;...&lt;/div&gt;
+	&lt;div class=&quot;left round16&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				</section><!-- fin #esquinas -->
+				
+				<section id="iconos">
+					<h2>Iconos</h2>
+					<p>Usa <span class="tag">.icol</span> e <span class="tag">.icor</span> para poner un icono al lado izquierdo y/o derecho de un texto o enlace.</p>
+					<div id="ejemplo9">
+						<ul>
+							<li><a href="#"><span class="icol icon-asterisk"></span> Asterisk</a></li>
+							<li><a href="#"><span class="icol icon-bug"></span> Bug</a></li>
+							<li><a href="#"><span class="icor icon-check"></span> Check</a></li>
+						</ul>
+					</div>
+					
+					<h3>Código fuente:</h3>
+<pre><code>&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;icol icon-asterisk&quot;&gt;&lt;/span&gt; Asterisk&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;icol icon-bug&quot;&gt;&lt;/span&gt; Bug&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;icor icon-check&quot;&gt;&lt;/span&gt; Check&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+					<p>Usa <span class="tag">.icon</span> e <span class="tag">.img-rpl</span> para remplazar texto o enlace por un icono.</p>
+					<div id="ejemplo10">
+						<ul>
+							<li><a href="#" class="icon icon-asterisk img-rpl">Asterisk</a></li>
+							<li><a href="#" class="icon icon-bug img-rpl">Bug</a></li>
+							<li><a href="#" class="icon icon-check img-rpl">Check</a></li>
+						</ul>
+					</div>
+					
+					<h3>Código fuente:</h3>
+<pre><code>&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;icon icon-asterisk img-rpl&quot;&gt;Asterisk&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;icon icon-bug img-rpl&quot;&gt;Bug&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;icon icon-check img-rpl&quot;&gt;Check&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+				</section><!-- fin #esquinas -->
+					<!--
+				<div class="seccion mb10">
+					<div class="clearer">
+						<img src="foto.jpg" class="left" />
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+					</div>
+				</div>
+				<div class="seccion mb10">
+					<div class="clearer">
+						<img src="foto.jpg" class="right" />
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+					</div>
+				</div>
+				<div class="seccion mb10">
+					<div class="clearer">
+						<img src="foto.jpg" class="center" />
+					</div>
+				</div>
+				<div class="seccion mb10">
+					<div class="curva sombra" id="ejemplo9"><p class="tac">Esquinas redondeadas con un radio de 4px + sombra, usando CSS3</p></div>
+				</div>
+				<div class="seccion" id="ejemplo10">
+					<p class="clearer mb10"><span class="icol asterisk"></span>Icono a la izquierda</p>
+					<a href="#" class="mb10"><span class="icor bug"></span>Icono a la derecha</a>
+					<p>Lista de iconos:</p>
+					<ul class="icol">
+						<li><span class="check"></span>Item 1</li>
+						<li><span class="check"></span>Item 2</li>
+						<li><span class="check"></span>Item 3</li>
+					</ul>
+				</div>-->
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+			</div><!-- fin maincol -->
+			</div>
+		</div>
+		<footer class="tac">
+			Desarrollado por <a href="//twitter.com/alainncito">@alainncito</a>.
+		</footer>		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+		<script src="js/global.js"></script>
+	</body>
+</html>

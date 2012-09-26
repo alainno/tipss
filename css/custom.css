@@ -1,0 +1,67 @@
+/*a,p,li{font-size:1.2em}*/
+
+body{font-size: 12px/*;padding: 15px 0*/}
+
+blockquote{background: #efefef;margin: 0;padding: 15px;border-left: 3px solid #ccc}
+
+.wrapper{margin:0 auto;width:960px}
+.leftcol{width: 200px}
+.maincol{width: 745px}
+
+.leftcol nav ul{position: fixed;padding: 0;margin: 0;border: 1px solid #ccc;width: 200px;overflow: hidden}
+.leftcol nav li{list-style: none;height: 30px;line-height: 30px}
+.leftcol nav li a{display: block;color: #000;padding: 0 15px}
+.leftcol nav li a:hover
+,.leftcol nav li a.actual{background: #000;color: #fff;text-decoration: none}
+
+.tag{color: #D01F3C;display: inline-block;border: 1px solid #D01F3C;background: #FFFF88;height: 16px;line-height: 16px;padding: 0 4px}
+
+/*h1{font-size:2.2em}
+.seccion{border:3px dashed #f00;padding:20px;}*/
+
+.col{background:#C3D9FF;height:40px;line-height: 40px;padding:15px;}
+
+#ejemplo3 .leftcol{width:170px}
+#ejemplo3 .rightcol{width: 500px}
+
+#ejemplo4 .leftcol{width:145px}
+#ejemplo4 .maincol{width:335px}
+#ejemplo4 .rightcol{width:145px}
+
+.bar{background:#C3D9FF;height: 20px;line-height: 20px}
+
+#ejemplo6 .bar{width: 139px}
+
+#ejemplo8 .col{width: 100px}
+
+/*#ejemplo9{background:#3F4C6B;color:#fff;padding:30px;}
+
+#ejemplo10 a{display:inline-block;line-height:16px}
+	.asterisk{background:url(asterisk_orange.png) no-repeat}
+	.bug{background:url(bug.png) no-repeat}
+	.check{background:url(tick.png) no-repeat}*/
+
+#ejemplo9 ul{margin: 0;padding: 0;height: 16px}
+#ejemplo9 li{list-style: none;display: inline;float: left;margin-right: 10px}
+#ejemplo9 li a{float: left;height: 16px;line-height: 16px;}
+	.icon-bug{background-image: url(../img/bug.png)}
+	.icon-asterisk{background-image: url(../img/asterisk_orange.png)}
+	.icon-check{background-image: url(../img/tick.png)}
+	
+#ejemplo10 ul{margin: 0;padding: 0;}
+#ejemplo10 li{list-style: none;/*height: 16px;padding-bottom: 8px;width: 16px*/;padding-bottom: 8px}
+/*#ejemplo10 li a{}*/
+
+pre{border: 1px solid #ccc;background: #efefef;color: #36393D;padding: 10px;line-height: 1.5em}
+
+header{background: #000;height: 50px;position: fixed;top: 0;left: 0;right: 0;z-index: 2;box-shadow: 0 0 3px 0 #666}
+
+.logo{color: #fff;font:bold 24px "Trebuchet MS", Helvetica, sans-serif;margin: 0;line-height: 50px}
+/*.logo span{color: #C3D9FF}*/
+
+.home{position: relative;/*margin-top: 50px*/}
+.leftcol > nav{padding-top: 50px}
+.home section{padding-top: 50px}
+/*.home section h2{margin: 15px 0 15px 0}*/
+
+footer{border-top:1px solid #ccc;background: #efefef;padding: 30px 0}
